@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "./components/Navbar";
+import TopleftImg from "./components/TopleftImg";
+
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-sore",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Joel ILETI",
@@ -16,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={` sora.className text-white font-sora relative`}>
+        <TopleftImg />
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
