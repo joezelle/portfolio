@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import TopleftImg from "./components/TopleftImg";
 
 const sora = Sora({
@@ -24,8 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` sora.className text-white font-sora relative`}>
-        <TopleftImg />
-        <Navbar />
+        {/* <TopleftImg /> */}
+        <Header />
         {children}
       </body>
     </html>
