@@ -3,7 +3,10 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 
 import Header from "./components/Header";
+import Transition from "./components/Transition";
+
 import TopleftImg from "./components/TopleftImg";
+import TransitionWrapper from "./components/TransitionWrapper";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -24,7 +27,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` sora.className text-white font-sora relative`}>
-        {/* <TopleftImg /> */}
         <Header />
         {children}
       </body>
