@@ -2,22 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .translate-z-0 {
+.translate-z-0 {
   transform: translateZ(0px);
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   background-color: #f13024;
 }
-
 
 .swiper-button-next:after,
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   color: #f13024;
-} */
+}
 
 @layer base {
   body {
@@ -46,7 +46,11 @@
   }
 
   .input {
-    @apply w-full h-[52px] rounded-lg pl-6 capitalize;
+    @apply w-full h-[52px] rounded-lg pl-6;
+  }
+
+  .subject {
+    @apply capitalize;
   }
 
   .input,
@@ -55,7 +59,7 @@
   }
 
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full h-[180px] p-6 rounded-lg resize-none;
   }
 }
 
