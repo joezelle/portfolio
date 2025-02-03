@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` sora.className text-white font-sora relative`}>
+      <body className={` page sora.className text-white font-sora relative`}>
         <Header />
         {children}
       </body>

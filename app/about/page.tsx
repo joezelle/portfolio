@@ -149,7 +149,7 @@ const About: React.FC = () => {
         <Circles />
         {/* avatar img */}
 
-        <div className="container mx-auto h-full flex flex-col items-center xl:flex-row justify-between">
+        <div className="container mx-auto h-full flex flex-col items-center xl:flex-row justify-between md:pt-20">
           {/* text */}
           <div className="flex-1 flex flex-col justify-center">
             <motion.h2
@@ -183,7 +183,7 @@ const About: React.FC = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+            className="flex flex-col w-full  h-full xl:max-w-[48%]  pl-[200px]"
           >
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
               {aboutData.map((item, itemIndex) => {
